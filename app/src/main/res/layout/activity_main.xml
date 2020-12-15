@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddia"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/quarto1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/quarto1on"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/vazio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/vazio"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="250dp"
+        android:alpha=".4"
+        android:background="@drawable/vazio"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/vazio2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="91dp"
+        android:alpha=".4"
+        android:background="@drawable/vazio"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vazio"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/vazio3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="25dp"
+        android:alpha=".4"
+        android:background="@drawable/vazio"
+        android:clickable="false"
+        app:layout_constraintLeft_toRightOf="@id/vazio"
+        app:layout_constraintTop_toTopOf="@id/vazio"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/vazio4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="0dp"
+        android:alpha=".4"
+        android:background="@drawable/vazio"
+        android:clickable="false"
+        app:layout_constraintRight_toLeftOf="@id/vazio"
+        app:layout_constraintTop_toTopOf="@id/vazio"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/vazio5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:alpha=".4"
+        android:background="@drawable/vazio"
+        android:clickable="false"
+        app:layout_constraintRight_toLeftOf="@id/vazio2"
+        app:layout_constraintTop_toTopOf="@+id/vazio2"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <ImageView
+        android:id="@+id/vazio6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/vazio"
+        android:clickable="false"
+        android:alpha=".4"
+        app:layout_constraintBottom_toBottomOf="@+id/vazio"
+        app:layout_constraintRight_toLeftOf="@id/quarto1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
